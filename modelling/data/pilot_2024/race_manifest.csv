@@ -1,0 +1,6 @@
+race_id,country,year,race_date,meeting_key,qualifying_session_key,race_session_key,practice_session_key,requires_M2_verification
+2024_bahrain_gp,Bahrain,2024,2024-03-02T15:00:00+00:00,1229,9468,9472,9467,True
+2024_saudi_arabia_gp,Saudi Arabia,2024,2024-03-09T17:00:00+00:00,1230,9476,9480,9475,True
+2024_australia_gp,Australia,2024,2024-03-24T04:00:00+00:00,1231,9484,9488,9483,True
+2024_japan_gp,Japan,2024,2024-04-07T05:00:00+00:00,1232,9492,9496,9491,True
+2024_china_gp,China,2024,2024-04-21T07:00:00+00:00,1233,9664,9673,9663,True

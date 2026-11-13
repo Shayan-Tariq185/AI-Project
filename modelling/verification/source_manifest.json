@@ -1,0 +1,422 @@
+{
+  "contract_version": "1.0",
+  "source": "existing collected OpenF1 data only; no network",
+  "races": 5,
+  "issues": 57,
+  "qualifying_lap_events": 12,
+  "deleted_events": 12,
+  "reinstated_events": 0,
+  "automatic_approval": false,
+  "sources": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 7977,
+      "sha256": "db8f3c529818c57826bed854c5052005a2f81a5bb995bbd4c518e239d35ced3d"
+    },
+    {
+      "path": "data/2024_australia/draft_entrants.csv",
+      "bytes": 3664,
+      "sha256": "059ac3fc58a8b4cb25c3a4c720877e29db5a65cc412f3b0dd2f9426c47012dd7"
+    },
+    {
+      "path": "data/2024_australia/podium_labels.csv",
+      "bytes": 493,
+      "sha256": "ccbcf0f6ced1859c4c6ba66cc880a58016f2fe5f227262afd92f685afbf93489"
+    },
+    {
+      "path": "data/2024_australia/post_grid_entrants.csv",
+      "bytes": 1887,
+      "sha256": "5d2be941aab0aa2163194b690f9a021ce60d76fcf6afb23c672c33b0d3c11438"
+    },
+    {
+      "path": "data/2024_australia/post_qualifying_entrants.csv",
+      "bytes": 1825,
+      "sha256": "6b16518fa3812e4a2cb94f466fa6b29892e632ab105aa185c7ad5b50b52f33cd"
+    },
+    {
+      "path": "data/2024_australia/quality_report.json",
+      "bytes": 8580,
+      "sha256": "6334cf18cb67cf7b591550f5dbff49bcc1fbe3d344a9ea560b8536b2ba37b4bd"
+    },
+    {
+      "path": "data/2024_australia/raw/drivers_session_key-9483.json",
+      "bytes": 9650,
+      "sha256": "9facb8e96d6bfbd98299edb65265101cbce60ebea4e792a6d965de06c40408f8"
+    },
+    {
+      "path": "data/2024_australia/raw/drivers_session_key-9484.json",
+      "bytes": 9650,
+      "sha256": "6c2e27eb648764b72ca21f3d316b83952b676c625fc9dc56ea0f07b57d5d43ce"
+    },
+    {
+      "path": "data/2024_australia/raw/laps_session_key-9483.json",
+      "bytes": 308293,
+      "sha256": "a192e3203136ef47fd2d606b6dc3b3e607b1ce3e1aff49b0f781f66bb9728959"
+    },
+    {
+      "path": "data/2024_australia/raw/laps_session_key-9484.json",
+      "bytes": 242989,
+      "sha256": "4c35e7821a134b570b51046fbd6ca14233ca15bcecdf4f0f100d7e88c5f82bee"
+    },
+    {
+      "path": "data/2024_australia/raw/race_control_session_key-9483.json",
+      "bytes": 6702,
+      "sha256": "c66cc31ea48b78f11a572e5c30240d6c56c32b3dd1686d2a40c3a393aca30bf5"
+    },
+    {
+      "path": "data/2024_australia/raw/race_control_session_key-9484.json",
+      "bytes": 16121,
+      "sha256": "9b96fae29a30bb741fdc6728eb544dcb7ea5f7d4c6133346e730cdb99a265996"
+    },
+    {
+      "path": "data/2024_australia/raw/session_result_session_key-9484.json",
+      "bytes": 6334,
+      "sha256": "2e25ff5363c15e0a4bb4069e9a3f12139eb898396bad209bd43214d029e072b2"
+    },
+    {
+      "path": "data/2024_australia/raw/session_result_session_key-9488.json",
+      "bytes": 5088,
+      "sha256": "de971efc270f9e5a2f8a3bfff2eb2b42dfc1d0eb256ead82c60012b7931e056a"
+    },
+    {
+      "path": "data/2024_australia/raw/sessions_year-2024_country_name-Australia.json",
+      "bytes": 2400,
+      "sha256": "19442c311c22bb19f0e84dc0e15d102fac97bec78c63cca77b5cf3c4a705c0cd"
+    },
+    {
+      "path": "data/2024_australia/raw/starting_grid_session_key-9484.json",
+      "bytes": 2611,
+      "sha256": "0e9afb16d15219a9129524dfffa295849729b5341f6ccc03c15262a1651225b0"
+    },
+    {
+      "path": "data/2024_australia/raw/weather_session_key-9484.json",
+      "bytes": 22839,
+      "sha256": "a555c9a8c1da8cae129da5c44962397aa974414ddfc6c41409ddcc067d3f4935"
+    },
+    {
+      "path": "data/2024_bahrain/draft_entrants.csv",
+      "bytes": 3791,
+      "sha256": "85ab9090c1db9bebe999f140a77c9dbab6dd08362b49f276a662c97988d16606"
+    },
+    {
+      "path": "data/2024_bahrain/podium_labels.csv",
+      "bytes": 476,
+      "sha256": "747a1e4f49c4b343dfc62d5c9bd02aa2c3f215385c3576aa5519f8548290d2fa"
+    },
+    {
+      "path": "data/2024_bahrain/post_grid_entrants.csv",
+      "bytes": 1926,
+      "sha256": "572e12fe2c92da04c88541818e5b27716b14d296c0cdfb7bb3ed6369e75367a1"
+    },
+    {
+      "path": "data/2024_bahrain/post_qualifying_entrants.csv",
+      "bytes": 1861,
+      "sha256": "60b6c110934d3e10f00896ec10a71461a057b60d27ec4e4c3b6fb9835841a918"
+    },
+    {
+      "path": "data/2024_bahrain/quality_report.json",
+      "bytes": 8586,
+      "sha256": "a5f700e2668582ef74a65a24a3798a02a526d46c605191a1b782bb9d68655b4b"
+    },
+    {
+      "path": "data/2024_bahrain/raw/drivers_session_key-9467.json",
+      "bytes": 10159,
+      "sha256": "82b06cde2590390a5b2a2010c01c229c6f034bcb0c727903783efb78734afc77"
+    },
+    {
+      "path": "data/2024_bahrain/raw/drivers_session_key-9468.json",
+      "bytes": 10159,
+      "sha256": "d83f635ab9162e212f1ef5c8155c0c63ca4001616cdf7e80554511b9d6f930c2"
+    },
+    {
+      "path": "data/2024_bahrain/raw/laps_session_key-9467.json",
+      "bytes": 267254,
+      "sha256": "da9bc30f2bc41a463c15cabe0afe403309007f9e5969729fa11da18ca5e0d5de"
+    },
+    {
+      "path": "data/2024_bahrain/raw/laps_session_key-9468.json",
+      "bytes": 228310,
+      "sha256": "c424bf8ed5136ae9545a3d6d830391ecb5fa1498a92e9ed619f452bec2c9415d"
+    },
+    {
+      "path": "data/2024_bahrain/raw/race_control_session_key-9467.json",
+      "bytes": 2307,
+      "sha256": "40df2e04bb25df8c1b54e8bf9fd0c8dbfe6bc26ab581db42969e3ed1f5f7652c"
+    },
+    {
+      "path": "data/2024_bahrain/raw/race_control_session_key-9468.json",
+      "bytes": 6875,
+      "sha256": "89ed978565a8f3fdc18b084fe454de63aee02f8bb2d0064915c6351391915f37"
+    },
+    {
+      "path": "data/2024_bahrain/raw/session_result_session_key-9468.json",
+      "bytes": 6668,
+      "sha256": "f1b19e75f3d74a2fb181f0140629b4a6fbbc1610b16caea712997fca868c36ce"
+    },
+    {
+      "path": "data/2024_bahrain/raw/session_result_session_key-9472.json",
+      "bytes": 5367,
+      "sha256": "5def2787df4fb00b33bb4764bb239dfd09e00695d6566b5fb6fe88badc1ec873"
+    },
+    {
+      "path": "data/2024_bahrain/raw/sessions_year-2024_country_name-Bahrain.json",
+      "bytes": 3772,
+      "sha256": "4e60535c3dcf7452f1632298170bfc205b9b5b20915023a62fda07325deb71b7"
+    },
+    {
+      "path": "data/2024_bahrain/raw/starting_grid_session_key-9468.json",
+      "bytes": 2746,
+      "sha256": "a165ed7e4a940c50f9b817848565bb0add9a6b5dbc5bb4b20b35f52c89b99428"
+    },
+    {
+      "path": "data/2024_bahrain/raw/weather_session_key-9468.json",
+      "bytes": 22490,
+      "sha256": "93df7ba2d5153a5d78872ec140d05368fe53ea7f17092bb3bd6dd13afe8b63f7"
+    },
+    {
+      "path": "data/2024_china/draft_entrants.csv",
+      "bytes": 4039,
+      "sha256": "082a4b193322e6d615fe8044ed73021a5e0f021f12e9d835674bc19adaa510d9"
+    },
+    {
+      "path": "data/2024_china/podium_labels.csv",
+      "bytes": 436,
+      "sha256": "225eaa2c936a376eda102089a0d8e6f962dbb6a244c077cbf42b3e4fb830d310"
+    },
+    {
+      "path": "data/2024_china/post_grid_entrants.csv",
+      "bytes": 2174,
+      "sha256": "eecc167ad86f73208982e896b54932270569214d4d1ed721c317d9304ee75082"
+    },
+    {
+      "path": "data/2024_china/post_qualifying_entrants.csv",
+      "bytes": 2109,
+      "sha256": "8ad591ec8bef2850838d55b5a6f4eee894ce827d2f463bc52ad2f55fd5d662e7"
+    },
+    {
+      "path": "data/2024_china/quality_report.json",
+      "bytes": 9016,
+      "sha256": "e0f35fe1c5fb3fd374122c0cabb378fb6d316dae31e1048d4ebd628bf78cfd62"
+    },
+    {
+      "path": "data/2024_china/raw/drivers_session_key-9663.json",
+      "bytes": 10159,
+      "sha256": "5abceecee68acd8b57097b86451bbe43320ee2593d1848922d18dbe386521001"
+    },
+    {
+      "path": "data/2024_china/raw/drivers_session_key-9664.json",
+      "bytes": 10159,
+      "sha256": "b0767331d6389452c2a14594f0cde9d9ac7751ac7a996908cc71178997728fc6"
+    },
+    {
+      "path": "data/2024_china/raw/laps_session_key-9663.json",
+      "bytes": 352304,
+      "sha256": "638d86570e5cb51050a919ca44ea44e029e95370f0d6650f2dca401ab5a6994c"
+    },
+    {
+      "path": "data/2024_china/raw/laps_session_key-9664.json",
+      "bytes": 216977,
+      "sha256": "46d33f9c1e88847f8498ef6332df01b5abec714369099f64eb4f1a932913a5a6"
+    },
+    {
+      "path": "data/2024_china/raw/race_control_session_key-9663.json",
+      "bytes": 6800,
+      "sha256": "5c9451a578a5777ded49e31beeabf7474684a5f3f8f84f6a74971c4fd6dbf1fd"
+    },
+    {
+      "path": "data/2024_china/raw/race_control_session_key-9664.json",
+      "bytes": 15101,
+      "sha256": "a62af49a03a29b37617516fafd3f366bea77bcc930bb5aee9497b6ebeb6dcbb8"
+    },
+    {
+      "path": "data/2024_china/raw/session_result_session_key-9664.json",
+      "bytes": 6668,
+      "sha256": "469ae30b295dbe93039327e00529a18f3bc0183db9650f73a296bb5ccf682c07"
+    },
+    {
+      "path": "data/2024_china/raw/session_result_session_key-9673.json",
+      "bytes": 5369,
+      "sha256": "d9467b64f74f111f5f0ded9a6b2668d157f75bc802521efb699f23247ce18dfc"
+    },
+    {
+      "path": "data/2024_china/raw/sessions_year-2024_country_name-China.json",
+      "bytes": 2376,
+      "sha256": "deb289ed7acfced80d59b63815c2b3b14ef414a144fa3877321087acfa82f6f9"
+    },
+    {
+      "path": "data/2024_china/raw/starting_grid_session_key-9664.json",
+      "bytes": 2749,
+      "sha256": "d761218aeb3399b7e31411adebdd277292851bc21c6013f7c714306aa4b9e68b"
+    },
+    {
+      "path": "data/2024_china/raw/weather_session_key-9664.json",
+      "bytes": 25201,
+      "sha256": "ea95595a0f71ff13a159983fd1e3e9f8a34ab07af2c85482ba427272d2e0d7ef"
+    },
+    {
+      "path": "data/2024_japan/draft_entrants.csv",
+      "bytes": 3756,
+      "sha256": "ec4631ddae97659b47cd79137be5caae866529aca721c35ba4082d19b7db7da8"
+    },
+    {
+      "path": "data/2024_japan/podium_labels.csv",
+      "bytes": 436,
+      "sha256": "a8479fcd7882475e08cc04b7f5223919919db6ca848a90a78ec7f128a6ee93a0"
+    },
+    {
+      "path": "data/2024_japan/post_grid_entrants.csv",
+      "bytes": 1891,
+      "sha256": "a67228eae05bb4555412a235ff10d8a46dc53c4c9a153806e6183e2af2dd0a1b"
+    },
+    {
+      "path": "data/2024_japan/post_qualifying_entrants.csv",
+      "bytes": 1826,
+      "sha256": "ac6bffa66afd17d3cd75b2244967aaed3ee5178cd93ee2e0326440aa714e6040"
+    },
+    {
+      "path": "data/2024_japan/quality_report.json",
+      "bytes": 8128,
+      "sha256": "8d6dfac2c4f8be59c6fdbdb64c53cb0eedfcd342e873f32050a82885a4acd5d4"
+    },
+    {
+      "path": "data/2024_japan/raw/drivers_session_key-9491.json",
+      "bytes": 10159,
+      "sha256": "8945e91ba5876adeca754ae9991d6b46ad1463f208ab4bd9b3b5987b76696005"
+    },
+    {
+      "path": "data/2024_japan/raw/drivers_session_key-9492.json",
+      "bytes": 10159,
+      "sha256": "e23fd38b88123d65ae6ce4da11bc9cd48b750009d43f8d845266d4b2111d29a0"
+    },
+    {
+      "path": "data/2024_japan/raw/laps_session_key-9491.json",
+      "bytes": 357061,
+      "sha256": "63cfd6adbd7aec71a8ba1715718b9aef4c46b13d567188be705bc3627e9ace97"
+    },
+    {
+      "path": "data/2024_japan/raw/laps_session_key-9492.json",
+      "bytes": 182452,
+      "sha256": "6c592292d3758b1e2fc10cfbd6b8355f7238b0295e01efb2297cb32df3253ff7"
+    },
+    {
+      "path": "data/2024_japan/raw/race_control_session_key-9491.json",
+      "bytes": 3594,
+      "sha256": "46aff927898911d473e049bfd246564a8fe7c54dd42222a3f635e588e6f370c5"
+    },
+    {
+      "path": "data/2024_japan/raw/race_control_session_key-9492.json",
+      "bytes": 7287,
+      "sha256": "d59eda5c856867fc9f7cb18e91c1b0d4644c6064fef60aef689af181622721aa"
+    },
+    {
+      "path": "data/2024_japan/raw/session_result_session_key-9492.json",
+      "bytes": 6664,
+      "sha256": "733372dd3cf7b33e6172c155773004bbf889234a7fb62044093ecd5be2011675"
+    },
+    {
+      "path": "data/2024_japan/raw/session_result_session_key-9496.json",
+      "bytes": 5355,
+      "sha256": "c02af966da0689ed0e75ce24c35057a65ce7ecabd73984b457689dfd475fa529"
+    },
+    {
+      "path": "data/2024_japan/raw/sessions_year-2024_country_name-Japan.json",
+      "bytes": 2350,
+      "sha256": "c8e9e7faa380be2640c2688bfab10a01a6cf98a809b169299deb8ed0f75cabf4"
+    },
+    {
+      "path": "data/2024_japan/raw/starting_grid_session_key-9492.json",
+      "bytes": 2749,
+      "sha256": "0b0792fb475e6868fc858df990c64d87c7b91f9f573d399c07cc8434ac2d59e6"
+    },
+    {
+      "path": "data/2024_japan/raw/weather_session_key-9492.json",
+      "bytes": 22269,
+      "sha256": "e48d022f48a73824b8a2239a013b7b550dee40995c7e10309cfa8217358e0944"
+    },
+    {
+      "path": "data/2024_saudi_arabia/draft_entrants.csv",
+      "bytes": 3908,
+      "sha256": "19edb98bad961bd79b53f2b56578aaddaa75dca1e824be66c71b80c9124a63ae"
+    },
+    {
+      "path": "data/2024_saudi_arabia/podium_labels.csv",
+      "bytes": 576,
+      "sha256": "9946459921e87cdac071be24ba93e391e11de01e85d3cfbc3258c2173c8cd1a5"
+    },
+    {
+      "path": "data/2024_saudi_arabia/post_grid_entrants.csv",
+      "bytes": 2043,
+      "sha256": "02be304a80a63011cc9f17ef6eceb2d249d763f64a61ba4e77f921cd16ba0257"
+    },
+    {
+      "path": "data/2024_saudi_arabia/post_qualifying_entrants.csv",
+      "bytes": 1978,
+      "sha256": "329dd2f659eb6cca0a7c9b9ed617e629bf5b9d74dea9e6efcef89aba42fd1d9e"
+    },
+    {
+      "path": "data/2024_saudi_arabia/quality_report.json",
+      "bytes": 9569,
+      "sha256": "4fa7186d951dfb6535b6c7335f71153b3f8446051c36ab5799b3ade7f8a04410"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/drivers_session_key-9475.json",
+      "bytes": 10019,
+      "sha256": "ea2b6136390828e7fd2a6e0fea24acfa5564d0314f56e5c53569be07e9d4f3f9"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/drivers_session_key-9476.json",
+      "bytes": 10019,
+      "sha256": "e958c55022f93599de0bf2700831921e94c01caae6188cb7698a50f81a862dca"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/laps_session_key-9475.json",
+      "bytes": 229029,
+      "sha256": "95d938fbf76df1c7fec4b6b38dc4f5f8668d7091feff30c6b5c16621f6f04033"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/laps_session_key-9476.json",
+      "bytes": 257844,
+      "sha256": "11a7413bb9e30097be450a411232237ab0726eb0e536a7323a708b9c9a85a55d"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/race_control_session_key-9475.json",
+      "bytes": 8275,
+      "sha256": "5e5f4456caaa45d1e7a1272596da7434f45f78fedd5ae7e1affa6af790b27848"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/race_control_session_key-9476.json",
+      "bytes": 15070,
+      "sha256": "0a7e6657ce8909c361191c27c558fe6fb3d566728e2ecd8e8e03a058c6a31fb0"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/session_result_session_key-9476.json",
+      "bytes": 6661,
+      "sha256": "533693898117164c61655c8bcd0009810089b2884a56cc78bb659c8ef2511343"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/session_result_session_key-9480.json",
+      "bytes": 5365,
+      "sha256": "46db7c0f34485cf7a6c4e9a2c37a0827dee8b1ecdc1aaa06153e9f3bac76ff0d"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/sessions_year-2024_country_name-Saudi Arabia.json",
+      "bytes": 2400,
+      "sha256": "c081b65f5b0482a2b53b077a7dd49a0b0bf42384fca9502d3227ec83e2f69c46"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/starting_grid_session_key-9476.json",
+      "bytes": 2743,
+      "sha256": "246735090ab40c0cb1cf0d816d397df332454cf5f75831d97afa2624117ac7a7"
+    },
+    {
+      "path": "data/2024_saudi_arabia/raw/weather_session_key-9476.json",
+      "bytes": 27451,
+      "sha256": "e6d617ea67ac50f442fe1f9577297decdd2b9f78bd285876c33ab99d8f6202d5"
+    },
+    {
+      "path": "data/pilot_2024/quality_report.json",
+      "bytes": 51174,
+      "sha256": "3804adfaf89efb3e07e1f12fea01c860d99ee8e13765b0d24268e54009689029"
+    }
+  ]
+}
