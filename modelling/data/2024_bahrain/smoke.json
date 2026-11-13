@@ -1,0 +1,47 @@
+{
+  "entrants": 20,
+  "grid_populated": 20,
+  "grid_verification_scope": "OpenF1 source/mapping integrity checked; explicit smoke-only attestation, M2 sign-off still required",
+  "post_qualifying_contract": "passed",
+  "post_qualifying_baseline_top_three": [
+    {
+      "driver_number": 1,
+      "driver_name": "Max VERSTAPPEN",
+      "qualifying_position": 1
+    },
+    {
+      "driver_number": 16,
+      "driver_name": "Charles LECLERC",
+      "qualifying_position": 2
+    },
+    {
+      "driver_number": 63,
+      "driver_name": "George RUSSELL",
+      "qualifying_position": 3
+    }
+  ],
+  "post_qualifying_prediction": {
+    "expected_rejection": "No trained artifact: D:\\AI_Project\\modelling\\artifacts\\post_qualifying.joblib. Train on reviewed historical races first."
+  },
+  "post_grid_contract": "passed",
+  "post_grid_baseline_top_three": [
+    {
+      "driver_number": 1,
+      "driver_name": "Max VERSTAPPEN",
+      "grid_position": 1
+    },
+    {
+      "driver_number": 16,
+      "driver_name": "Charles LECLERC",
+      "grid_position": 2
+    },
+    {
+      "driver_number": 63,
+      "driver_name": "George RUSSELL",
+      "grid_position": 3
+    }
+  ],
+  "post_grid_prediction": {
+    "expected_rejection": "No trained artifact: D:\\AI_Project\\modelling\\artifacts\\post_grid.joblib. Train on reviewed historical races first."
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "race_id": "2024_china_gp",
+  "entrants": 20,
+  "practice_session": {
+    "session_key": 9663,
+    "session_type": "Practice",
+    "session_name": "Practice 1",
+    "date_start": "2024-04-19T03:30:00+00:00",
+    "date_end": "2024-04-19T04:30:00+00:00",
+    "meeting_key": 1233,
+    "circuit_key": 49,
+    "circuit_short_name": "Shanghai",
+    "country_key": 53,
+    "country_code": "CHN",
+    "country_name": "China",
+    "location": "Shanghai",
+    "gmt_offset": "08:00:00",
+    "year": 2024,
+    "is_cancelled": false
+  },
+  "qualifying_session": {
+    "session_key": 9664,
+    "session_type": "Qualifying",
+    "session_name": "Qualifying",
+    "date_start": "2024-04-20T07:00:00+00:00",
+    "date_end": "2024-04-20T08:00:00+00:00",
+    "meeting_key": 1233,
+    "circuit_key": 49,
+    "circuit_short_name": "Shanghai",
+    "country_key": 53,
+    "country_code": "CHN",
+    "country_name": "China",
+    "location": "Shanghai",
+    "gmt_offset": "08:00:00",
+    "year": 2024,
+    "is_cancelled": false
+  },
+  "race_session": {
+    "session_key": 9673,
+    "session_type": "Race",
+    "session_name": "Race",
+    "date_start": "2024-04-21T07:00:00+00:00",
+    "date_end": "2024-04-21T09:00:00+00:00",
+    "meeting_key": 1233,
+    "circuit_key": 49,
+    "circuit_short_name": "Shanghai",
+    "country_key": 53,
+    "country_code": "CHN",
+    "country_name": "China",
+    "location": "Shanghai",
+    "gmt_offset": "08:00:00",
+    "year": 2024,
+    "is_cancelled": false
+  },
+  "grid_verified": false,
+  "grid_source_session_key": 9664,
+  "grid_integrity": {
+    "populated": 20,
+    "unique_driver_assignments": 20,
+    "positions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "complete_1_to_n": true
+  },
+  "race_result_rows": 20,
+  "race_control_rows": 45,
+  "entrant_source_session_key": 9664,
+  "qualifying_no_recorded_valid_lap_drivers": [],
+  "missing_columns_or_values": {},
+  "blocking": [
+    "Lap deletions and official qualifying classification require M2/FIA review.",
+    "Final starting grid and complete eligible entrant list require M2 verification.",
+    "Historical API retrieval does not establish availability at forecast cutoff; as_of_utc is the intended cutoff.",
+    "Race result statuses require review before creating training targets."
+  ],
+  "limitations": [
+    "Pace reflects track evolution; best laps across all qualifying segments are used.",
+    "Pit-out/incomplete laps excluded, but pit-in and deleted-lap validity are not fully established by this draft filter.",
+    "One race is a data smoke test only; no performance claim or production artifact."
+  ],
+  "requires_M2_verification": true,
+  "M2_approved": false,
+  "missing_by_feature": {
+    "qualifying_position": 0,
+    "qualifying_gap_seconds": 0,
+    "practice_gap_seconds": 0,
+    "qualifying_air_temp_c": 0,
+    "qualifying_track_temp_c": 0,
+    "qualifying_rainfall": 0,
+    "grid_position": 0
+  },
+  "duplicate_feature_driver_rows": 0,
+  "source_coverage": {
+    "qualifying_classification": {
+      "rows": 20,
+      "unique_drivers": 20,
+      "missing_entrant_drivers": [],
+      "source_only_drivers": [],
+      "duplicate_drivers": []
+    },
+    "qualifying_laps": {
+      "rows": 280,
+      "unique_drivers": 20,
+      "missing_entrant_drivers": [],
+      "source_only_drivers": []
+    },
+    "practice_laps": {
+      "rows": 453,
+      "unique_drivers": 20,
+      "missing_entrant_drivers": [],
+      "source_only_drivers": []
+    },
+    "starting_grid": {
+      "rows": 20,
+      "unique_drivers": 20,
+      "missing_entrant_drivers": [],
+      "source_only_drivers": [],
+      "duplicate_drivers": []
+    },
+    "race_classification": {
+      "rows": 20,
+      "unique_drivers": 20,
+      "missing_entrant_drivers": [],
+      "source_only_drivers": [],
+      "duplicate_drivers": []
+    }
+  },
+  "identity_review": [],
+  "race_completed": true,
+  "label_issues": [],
+  "labels_missing": 0,
+  "podium_label_count": 3,
+  "contract_smoke_checks": {
+    "post_qualifying": "passed",
+    "post_grid": "passed_with_smoke_only_grid_attestation"
+  },
+  "lap_quality": {
+    "qualifying": {
+      "raw_laps": 280,
+      "provisional_valid_driver_numbers": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        14,
+        16,
+        18,
+        20,
+        22,
+        23,
+        24,
+        27,
+        31,
+        44,
+        55,
+        63,
+        77,
+        81
+      ],
+      "rejected_laps": {
+        "pit_out_or_unknown": 94,
+        "invalid_or_missing_duration": 19,
+        "incomplete_sectors": 0
+      },
+      "lap_deletion_or_reinstatement_messages": [
+        {
+          "meeting_key": 1233,
+          "session_key": 9664,
+          "date": "2024-04-20T07:07:19+00:00",
+          "driver_number": null,
+          "lap_number": null,
+          "category": "Other",
+          "flag": null,
+          "scope": null,
+          "sector": null,
+          "qualifying_phase": null,
+          "message": "CAR 2 (SAR) LAP DELETED - TRACK LIMITS AT TURN 10 LAP 3 15:03:49"
+        },
+        {
+          "meeting_key": 1233,
+          "session_key": 9664,
+          "date": "2024-04-20T07:09:40+00:00",
+          "driver_number": null,
+          "lap_number": null,
+          "category": "Other",
+          "flag": null,
+          "scope": null,
+          "sector": null,
+          "qualifying_phase": null,
+          "message": "CAR 23 (ALB) TIME 4:11.475 DELETED - TRACK LIMITS AT TURN 1 LAP 4 15:06:55"
+        },
+        {
+          "meeting_key": 1233,
+          "session_key": 9664,
+          "date": "2024-04-20T07:10:15+00:00",
+          "driver_number": null,
+          "lap_number": null,
+          "category": "Other",
+          "flag": null,
+          "scope": null,
+          "sector": null,
+          "qualifying_phase": null,
+          "message": "CAR 11 (PER) LAP DELETED - TRACK LIMITS AT TURN 1 LAP 3 15:06:55"
+        }
+      ],
+      "fully_verified": false,
+      "review_required": "Pit-in/deleted/reinstated lap validity must be reviewed by M2; provisional filter is not official validity."
+    },
+    "practice": {
+      "raw_laps": 453,
+      "provisional_valid_driver_numbers": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        14,
+        16,
+        18,
+        20,
+        22,
+        23,
+        24,
+        27,
+        31,
+        44,
+        55,
+        63,
+        77,
+        81
+      ],
+      "rejected_laps": {
+        "pit_out_or_unknown": 71,
+        "invalid_or_missing_duration": 18,
+        "incomplete_sectors": 0
+      },
+      "lap_deletion_or_reinstatement_messages": [],
+      "fully_verified": false,
+      "review_required": "Pit-in/deleted/reinstated lap validity must be reviewed by M2; provisional filter is not official validity."
+    }
+  },
+  "forecast_cutoffs": {
+    "post_qualifying": "2024-04-20T08:00:00+00:00",
+    "post_grid": null
+  },
+  "cutoff_review": "Post-qualifying uses intended session-end cutoff; historical publication timing is unverified. Post-grid publication cutoff unknown; M2 must supply it.",
+  "classification_coverage_complete": true,
+  "collection_complete": true,
+  "collection_status": "collected_draft_requires_M2",
+  "requests": [
+    {
+      "url": "https://api.openf1.org/v1/sessions?year=2024&country_name=China",
+      "rows": 5,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/drivers?session_key=9664",
+      "rows": 20,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/laps?session_key=9664",
+      "rows": 280,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/laps?session_key=9663",
+      "rows": 453,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/weather?session_key=9664",
+      "rows": 86,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/session_result?session_key=9664",
+      "rows": 20,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/starting_grid?session_key=9664",
+      "rows": 20,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/session_result?session_key=9673",
+      "rows": 20,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/race_control?session_key=9664",
+      "rows": 45,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/drivers?session_key=9663",
+      "rows": 20,
+      "cached": true
+    },
+    {
+      "url": "https://api.openf1.org/v1/race_control?session_key=9663",
+      "rows": 20,
+      "cached": true
+    }
+  ]
+}

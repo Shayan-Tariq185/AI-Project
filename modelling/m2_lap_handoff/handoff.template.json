@@ -1,0 +1,20 @@
+{
+  "handoff_id": "REPLACE_WITH_IMMUTABLE_DATASET_VERSION",
+  "contract_version": "2.0",
+  "task": "lap_time",
+  "stage_or_mode": "historical",
+  "files": [],
+  "races": [],
+  "lineage_path": "lineage.csv",
+  "crosswalk_paths": ["drivers.csv", "circuits.csv"],
+  "quality_report_path": "quality.json",
+  "assumption_decisions": {
+    "A1": {"status": "unresolved", "convention": "completed_laps_before_target", "evidence": null},
+    "A2": {"status": "unresolved", "matching": "latest_available_at_or_before_cutoff", "max_age_seconds": null, "evidence": null},
+    "A3": {"status": "unresolved", "scope": "clean_normal_practice_flying_laps", "supported_compounds": [], "evidence": null}
+  },
+  "review_status": "unresolved",
+  "reviewer": "",
+  "reviewed_at_utc": null,
+  "approved_for_modeling": false
+}
