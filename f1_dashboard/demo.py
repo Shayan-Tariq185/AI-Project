@@ -12,11 +12,11 @@ RACES = (
 SCENARIOS = ("Before qualifying", "Qualifying ready", "Official grid ready", "Qualifying weather missing")
 DRIVERS = (
     ("NOR", "Lando Norris", 0.00, 0.12, 5),
-    ("VER", "Max Verstappen", 0.11, 0.00, 1),
+    ("VER", "Max Verstappen", 0.42, 0.38, 6),
     ("LEC", "Charles Leclerc", 0.18, 0.24, 4),
     ("PIA", "Oscar Piastri", 0.21, 0.17, 2),
     ("RUS", "George Russell", 0.35, 0.28, 3),
-    ("HAM", "Lewis Hamilton", 0.42, 0.38, 6),
+    ("HAM", "Lewis Hamilton", 0.11, 0.00, 1),
 )
 
 
