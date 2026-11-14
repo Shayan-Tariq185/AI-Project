@@ -15,6 +15,8 @@ The forecast page starts at **Awaiting qualifying data.** Change **Demo readines
 
 The archive includes a **fictional Sample Grand Prix**, fictional result and a **2 / 3** match example. New saves remain pending until a matching result is supplied. Snapshots persist across local app restarts under ignored `data/saved_forecasts/`; download JSON for a portable copy. Hosted local storage may be ephemeral and must be replaced with durable shared storage for deployment. No official result ingestion or scheduler exists yet. The lap formula has no measured test error; the UI says so.
 
+M3's modelling code and `integration_adapter.py` are now included under `modelling/`. The **Integration status** screen reports local model-file presence and outstanding handoffs. A callable M1 bridge delegates to M3's adapter and preserves its complete result/evidence, but the prediction screens still use demo functions: production artifacts and reviewed M2 evidence are pending. M3's current lap model also requires driver context, which must be reconciled with this project's four-input form. See [docs/M3_HANDOFF.md](docs/M3_HANDOFF.md) for the precise differences, optional pinned model setup (`requirements-models.txt`) and the known Windows snapshot-test issue.
+
 ## Windows setup and launch
 
 Run in the repository folder. Python 3.11+ is required. Shayan's installed Python was found here, even though `python` and `py` do not resolve:
@@ -56,6 +58,8 @@ Behavior checks:
 | `f1_dashboard/predictions.py` | Replaceable demo prediction functions |
 | `f1_dashboard/contracts.py` | Typed inputs, readiness, input/cutoff validation and comparison |
 | `f1_dashboard/archive.py` | Immutable local JSON snapshots |
+| `f1_dashboard/m3_bridge.py`, `f1_dashboard/model_worker.py` | Optional isolated M3 inference boundary, with explicit failures |
+| `docs/M3_HANDOFF.md` | Current M3 compatibility, setup and team integration sequence |
 | `tests/` | Forecast integrity, storage and Streamlit flow checks |
 
 ## Branch workflow
