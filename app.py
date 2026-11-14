@@ -3,61 +3,48 @@ import json
 from dataclasses import asdict
 from datetime import datetime, timezone
 import streamlit as st
-from f1_dashboard import archive, demo, predictions, m3_bridge
+from f1_dashboard import archive, demo, predictions, m3_bridge, ui
 from f1_dashboard.contracts import matched_picks, readiness, utc
 
-st.set_page_config(page_title="Apex | F1 Analytics", page_icon="🏎️", layout="wide")
-
-
-def picks_cards(picks, names):
-    for column, code in zip(st.columns(3), sorted(picks, key=lambda code: names[code])):
-        with column.container(border=True):
-            st.caption("PODIUM PICK · UNORDERED")
-            st.subheader(names[code])
-            st.caption(code)
+st.set_page_config(page_title="APEX | Race Intelligence", page_icon="🏎️", layout="wide")
+ui.apply_theme()
 
 
 with st.sidebar:
-    st.title("APEX / F1")
-    st.caption("AI2002 · Race prediction & analytics")
+    ui.brand()
     page = st.radio("Workspace", ["Podium forecast", "Forecast archive", "Lap-time estimator", "Integration status"], key="page")
-    st.divider()
-    st.warning("DEMO MODE")
-    st.caption("Synthetic session data and illustrative predictions. No live inputs or trained models connected.")
-    st.caption("M1 · Shayan / Streamlit & integration")
+    ui.sidebar_note()
 
-st.caption("AI2002  /  FORMULA 1 ANALYTICS")
+ui.topline(page)
 
 if page == "Podium forecast":
-    st.title("The next podium.")
-    st.write("Three drivers to watch. Any finishing order.")
-    st.info("Real calendar entries · demo readiness, inputs and outputs. Scenarios do not report live race status.")
+    ui.hero("01 / RACE FORECAST", "Read the race.", "Call the podium.",
+            "Qualifying pace. Session weather. Starting grid. Explore the three-driver podium set, in any finishing order.")
+    st.caption("Real calendar entries · demo readiness, inputs and outputs. Scenarios do not report live race status.")
     races = demo.upcoming_races()
     if not races:
         st.warning("No upcoming races remain in the demo calendar. Ask M2 for an updated calendar snapshot.")
         st.caption(f"Static calendar checked {demo.CALENDAR_CHECKED}.")
         st.stop()
-    race_id = st.selectbox("Upcoming Grand Prix", [r.race_id for r in races],
-                           format_func=lambda value: next(f"{r.name} · {r.local_date}" for r in races if r.race_id == value),
-                           key="race")
+    with st.container(border=True, key="forecast_controls"):
+        ui.section("Race weekend", "Set your demo scenario")
+        race_column, scenario_column = st.columns([1.2, 1], gap="medium")
+        with race_column:
+            race_id = st.selectbox("Upcoming Grand Prix", [r.race_id for r in races],
+                                   format_func=lambda value: next(f"{r.name} · {r.local_date}" for r in races if r.race_id == value),
+                                   key="race")
+        with scenario_column:
+            scenario = st.selectbox("Demo readiness scenario", demo.SCENARIOS, key="scenario")
+        practice = st.checkbox("Include available demo practice pace", value=True, key="practice")
     race = next(r for r in races if r.race_id == race_id)
-    st.caption(f"{race.circuit} · {race.local_date} (venue-local date) · Start {race.start_utc} (UTC)")
-    scenario = st.selectbox("Demo readiness scenario", demo.SCENARIOS, key="scenario")
-    practice = st.checkbox("Include available demo practice pace", value=True, key="practice")
+    ui.race_banner(race)
     inputs = demo.load_demo_inputs(race, scenario, practice)
     state = readiness(inputs)
     ready = state.startswith("Ready")
+    ui.section("Data readiness", "Demo input availability")
+    ui.readiness_cards(inputs)
     (st.success if ready else st.warning)(state)
-    cols = st.columns(4)
-    for col, label, available in zip(cols, ["Qualifying", "Practice (optional)", "Qualifying weather", "Official grid"],
-                                    [inputs.qualifying_available_utc, inputs.practice_available_utc,
-                                     inputs.weather_available_utc, inputs.grid_available_utc]):
-        col.metric(label, "Available (demo)" if available else "Missing")
     include_grid = scenario == "Official grid ready"
-    st.caption("Grid-ready generates an updated forecast; previously saved qualifying forecasts stay unchanged.")
-    with st.expander("Inspect demo inputs and forecast cutoff"):
-        st.json(asdict(inputs))
-        st.caption(f"Static calendar checked {demo.CALENDAR_CHECKED}. Source: {demo.CALENDAR_SOURCE}")
     selection = (race_id, scenario, practice)
     if st.session_state.get("forecast_selection") != selection:
         st.session_state.pop("forecast", None)
@@ -70,8 +57,8 @@ if page == "Podium forecast":
             st.error(str(error))
     forecast = st.session_state.get("forecast")
     if forecast:
-        st.subheader("Demo podium picks")
-        picks_cards(forecast["picks"], forecast["driver_names"])
+        ui.section("The podium set", "Three picks / any finishing order")
+        ui.picks_cards(forecast["picks"], forecast["driver_names"])
         st.caption("Alphabetical display · no predicted P1/P2/P3 · no calibrated probabilities.")
         st.caption(f"{forecast['mode']} · {forecast['model_version']} · Cutoff {forecast['cutoff_utc']}")
         st.caption(f"Created {forecast['created_at_utc']}")
@@ -87,10 +74,16 @@ if page == "Podium forecast":
                     st.success("Saved locally. Open Forecast archive to review or download it.")
             except (OSError, ValueError) as error:
                 st.error(f"Could not save forecast: {error}")
+    else:
+        ui.empty_forecast(ready)
+    with st.expander("Inspect demo inputs and forecast cutoff"):
+        st.json(asdict(inputs))
+        st.caption(f"Static calendar checked {demo.CALENDAR_CHECKED}. Source: {demo.CALENDAR_SOURCE}")
+    st.caption("A grid update creates a new forecast. Saved qualifying forecasts stay unchanged.")
 
 elif page == "Forecast archive":
-    st.title("Before the lights went out.")
-    st.write("Preserved forecast snapshots, compared by driver overlap.")
+    ui.hero("02 / FORECAST ARCHIVE", "Before the lights.", "After the flag.",
+            "The original call, on the record. Revisit saved forecasts and compare the three-driver set with the actual podium.")
     st.info("DEMO archive · the Sample Grand Prix and its actual podium are fictional. New saves await a matching result.")
     try:
         records, errors = archive.load_snapshots()
@@ -99,12 +92,13 @@ elif page == "Forecast archive":
     for error in errors:
         st.warning(error)
     records = sorted([demo.SAMPLE_FORECAST, *records], key=lambda item: item["created_at_utc"], reverse=True)
+    ui.section("The forecast log", "Preserved snapshots")
     selected = st.selectbox("Saved forecast", range(len(records)),
                             format_func=lambda i: f"{records[i]['race']['name']} · {records[i]['mode']} · {records[i]['created_at_utc']} · {records[i]['forecast_id'][:8]}",
                             key="archive_record")
     record = records[selected]
     st.subheader(record["race"]["name"])
-    picks_cards(record["picks"], record["driver_names"])
+    ui.picks_cards(record["picks"], record["driver_names"])
     st.caption(f"Mode: {record['mode']} · Model: {record['model_version']}")
     st.caption(f"Created {record['created_at_utc']} · Input cutoff {record['cutoff_utc']}")
     result = demo.DEMO_RESULTS.get(record["race"]["race_id"])
@@ -121,11 +115,14 @@ elif page == "Forecast archive":
         st.json(record["input_snapshot"])
 
 elif page == "Integration status":
-    st.title("From prototype to prediction.")
-    st.write("Team handoff status for connecting the trained models.")
+    ui.hero("04 / TEAM GARAGE", "Built to connect.", "Ready for handoff.",
+            "A clear view of model deliveries and the data needed to move from the prototype to real predictions.")
     st.warning("Real model predictions are not enabled in this dashboard. The forecast and lap screens still use demo functions.")
-    st.subheader("M3 model files")
-    st.table(m3_bridge.artifact_status())
+    ui.section("Model delivery", "File presence / not approval")
+    model_rows = m3_bridge.artifact_status()
+    ui.pipeline_cards(model_rows)
+    with st.expander("Model and metadata file details"):
+        st.table(model_rows)
     st.caption("This checks file presence only. M3 validates hashes, schema, versions and handoff evidence during inference. Present files do not prove a model is usable.")
     st.subheader("What the team needs next")
     st.write("M2: reviewed race inputs, source availability at the forecast cutoff, driver/circuit identities and official grid evidence.")
@@ -138,10 +135,12 @@ elif page == "Integration status":
         st.caption("See docs/M3_HANDOFF.md for current differences and the integration sequence.")
 
 else:
-    st.title("Find your lap time.")
-    st.write("Estimate a clean lap from four inputs.")
+    ui.hero("03 / LAP-TIME LAB", "Every millisecond.", "A little clearer.",
+            "Choose a circuit and tire setup. Explore an illustrative clean-lap estimate, one scenario at a time.")
     st.info("DEMO formula · separate from the podium forecast · supported ranges are demo limits, not training coverage.")
     with st.form("lap_form"):
+        ui.section("Build your lap", "Four inputs / one estimate")
+        ui.compound_legend()
         left, right = st.columns(2)
         with left:
             circuit = st.selectbox("Circuit", list(predictions.CIRCUIT_BASE_SECONDS), key="lap_circuit")
@@ -153,15 +152,16 @@ else:
     if submitted:
         try:
             estimate = predictions.estimate_lap(circuit, compound, age, temp)
-            st.metric("Estimated clean lap time (demo)", f"{estimate.seconds:.3f} s")
-            st.caption(f"Inputs: {circuit} · {compound} · {age} laps · {temp:g} °C")
-            if estimate.test_mae_seconds is None:
-                st.write("Typical test error: unavailable — awaiting M3's held-out evaluation.")
-            else:
-                st.write(f"Typical test error (MAE): {estimate.test_mae_seconds:.3f} s")
-            st.caption(f"Model: {estimate.model_version}. Illustrative estimate; not a race or qualifying prediction.")
+            with st.container(border=True, key="lap_result"):
+                ui.section("Your demo lap", "Clean lap / seconds")
+                st.metric("Estimated clean lap time (demo)", f"{estimate.seconds:.3f} s")
+                st.caption(f"Inputs: {circuit} · {compound} · {age} laps · {temp:g} °C")
+                if estimate.test_mae_seconds is None:
+                    st.write("Typical test error: unavailable — awaiting M3's held-out evaluation.")
+                else:
+                    st.write(f"Typical test error (MAE): {estimate.test_mae_seconds:.3f} s")
+                st.caption(f"Model: {estimate.model_version}. Illustrative estimate; not a race or qualifying prediction.")
         except ValueError as error:
             st.error(str(error))
 
-st.divider()
-st.caption("APEX / AI2002 · Student prototype · Demo inputs and outputs")
+ui.footer()
