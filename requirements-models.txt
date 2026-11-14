@@ -1,0 +1,3 @@
+# Optional M3 integration/test environment, installed in the same project .venv.
+-r requirements.txt
+-r modelling/requirements-lock.txt

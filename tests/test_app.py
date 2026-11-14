@@ -98,6 +98,14 @@ class AppFlowTests(unittest.TestCase):
             self.assert_clean(app)
             self.assertTrue(any("No upcoming races" in v.value for v in app.warning))
 
+    def test_integration_status_keeps_predictions_explicitly_disabled(self):
+        app = self.app()
+        app.radio(key="page").set_value("Integration status").run()
+        self.assert_clean(app)
+        self.assertTrue(any("Real model predictions are not enabled" in v.value for v in app.warning))
+        self.assertTrue(any("driver identity" in v.value for v in app.info))
+        self.assertEqual(len(app.table), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

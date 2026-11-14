@@ -2,6 +2,8 @@
 
 This proposed contract is implemented by the prototype. Agree on feature definitions, transformations, missingness and units before substituting real adapters/models.
 
+**M3 merge update:** M3 now supplies its own contract-v2 pipelines. The differences from this original M1 proposal, optional callable bridge and remaining handoffs are documented in [M3_HANDOFF.md](M3_HANDOFF.md). In particular, M3 requires qualifying position/air temperature and a full driver/race context for lap inference. No production artifacts or model-backed dashboard forecasts are supplied yet.
+
 ## M2: upcoming-race adapter
 
 Replace `demo.upcoming_races()` and `demo.load_demo_inputs()` with functions returning `Race` / `RaceInputs` from `f1_dashboard/contracts.py`. Keep an explicit demo/live distinction and offline fixtures.

@@ -3,7 +3,7 @@ import json
 from dataclasses import asdict
 from datetime import datetime, timezone
 import streamlit as st
-from f1_dashboard import archive, demo, predictions
+from f1_dashboard import archive, demo, predictions, m3_bridge
 from f1_dashboard.contracts import matched_picks, readiness, utc
 
 st.set_page_config(page_title="Apex | F1 Analytics", page_icon="🏎️", layout="wide")
@@ -20,7 +20,7 @@ def picks_cards(picks, names):
 with st.sidebar:
     st.title("APEX / F1")
     st.caption("AI2002 · Race prediction & analytics")
-    page = st.radio("Workspace", ["Podium forecast", "Forecast archive", "Lap-time estimator"], key="page")
+    page = st.radio("Workspace", ["Podium forecast", "Forecast archive", "Lap-time estimator", "Integration status"], key="page")
     st.divider()
     st.warning("DEMO MODE")
     st.caption("Synthetic session data and illustrative predictions. No live inputs or trained models connected.")
@@ -119,6 +119,23 @@ elif page == "Forecast archive":
                        file_name=f"{record['forecast_id']}.json", mime="application/json")
     with st.expander("Saved input snapshot"):
         st.json(record["input_snapshot"])
+
+elif page == "Integration status":
+    st.title("From prototype to prediction.")
+    st.write("Team handoff status for connecting the trained models.")
+    st.warning("Real model predictions are not enabled in this dashboard. The forecast and lap screens still use demo functions.")
+    st.subheader("M3 model files")
+    st.table(m3_bridge.artifact_status())
+    st.caption("This checks file presence only. M3 validates hashes, schema, versions and handoff evidence during inference. Present files do not prove a model is usable.")
+    st.subheader("What the team needs next")
+    st.write("M2: reviewed race inputs, source availability at the forecast cutoff, driver/circuit identities and official grid evidence.")
+    st.write("M3: trained model files with matching metadata, held-out evaluation and supported input categories/ranges.")
+    st.info("Lap interface decision pending: M3's current model also needs a reviewed driver identity and race context. The four-input demo form stays available; real lap prediction needs an agreed driver policy or a model trained for those four inputs.")
+    with st.expander("Developer setup and handoff details"):
+        st.table(m3_bridge.dependency_status())
+        st.code('& ".\\.venv\\Scripts\\python.exe" -m pip install -r requirements-models.txt', language="powershell")
+        st.write("The callable bridge uses M3's integration_adapter with RaceInputs and explicit reviewed translation contexts. It preserves the adapter's evidence and result disclosures. It never trains a model or replaces a failed real prediction with demo output.")
+        st.caption("See docs/M3_HANDOFF.md for current differences and the integration sequence.")
 
 else:
     st.title("Find your lap time.")
