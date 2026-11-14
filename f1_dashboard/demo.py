@@ -50,11 +50,11 @@ SAMPLE_FORECAST = {
     "race": {"race_id": "fictional-sample-gp", "name": "Sample Grand Prix (fictional)",
              "circuit": "Sample Circuit", "local_date": "2026-01-11", "start_utc": "2026-01-11T14:00:00Z"},
     "created_at_utc": "2026-01-10T18:05:00Z", "cutoff_utc": "2026-01-10T18:00:00Z",
-    "model_version": "demo-podium-v1", "mode": "qualifying", "picks": ["LEC", "NOR", "VER"],
-    "driver_names": {"LEC": "Charles Leclerc", "NOR": "Lando Norris", "VER": "Max Verstappen"},
+    "model_version": "demo-podium-v1", "mode": "qualifying", "picks": ["LEC", "NOR", "HAM"],
+    "driver_names": {"LEC": "Charles Leclerc", "NOR": "Lando Norris", "HAM": "Lewis Hamilton"},
     "input_snapshot": {"note": "Illustrative seed record only; not a real model inference."},
 }
 DEMO_RESULTS = {"fictional-sample-gp": {
-    "podium": ["VER", "NOR", "PIA"], "available_at_utc": "2026-01-11T17:00:00Z",
+    "podium": ["HAM", "NOR", "PIA"], "available_at_utc": "2026-01-11T17:00:00Z",
     "source": "Fictional demo result (not official)",
 }}
