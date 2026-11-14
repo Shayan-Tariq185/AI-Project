@@ -15,6 +15,9 @@ M2 handoff requirements and the updated training workflow.
 
 The Linear Regression lap-time task is implemented separately in `lap_model.py`.
 See [LAP_TIME_V2.md](LAP_TIME_V2.md) for its API, evidence requirements and limits.
+The [M3-to-M1 integration adapter](INTEGRATION_ADAPTER.md) translates dashboard
+requests using explicit reviewed context and preserves M3 evidence and artifact
+validation. M1 wiring remains a separate integration step.
 OpenF1 and Jolpica are approved sources in the contract, but no Jolpica integration
 or new data collection is included. Original CONTRACT.md, collected race datasets
 and M2 verification files remain unchanged.
