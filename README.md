@@ -2,6 +2,8 @@
 
 AI2002 semester project, built with Streamlit by a three-person team.
 
+The APEX interface uses a racing-inspired dark theme, locally bundled Barlow Condensed / Space Grotesk / JetBrains Mono fonts, an original vector car illustration, compact readiness panels and unordered driver cards. It adapts to narrow screens and respects reduced-motion preferences. Typography works offline; the font licenses and source links are in `assets/fonts/`. Presentation components live in `f1_dashboard/ui.py`, with styling in `assets/theme.css`; prediction/data behavior is separate.
+
 ## Features
 
 - **Podium forecast:** choose a real upcoming Grand Prix, inspect readiness, then see three unordered podium picks after qualifying. Use qualifying pace, available practice pace and qualifying-session weather. The FIA final starting grid enables an updated forecast. Preserve timestamped pre-race snapshots and compare against the actual podium by set overlap (0–3 matches).
@@ -54,6 +56,7 @@ Behavior checks:
 | File | Purpose |
 | --- | --- |
 | `app.py` | Forecast, archive and lap estimator screens |
+| `f1_dashboard/ui.py`, `assets/` | Shared UI components, theme, original illustration and local fonts/licenses |
 | `f1_dashboard/demo.py` | Replaceable calendar, synthetic inputs and archive/result fixtures |
 | `f1_dashboard/predictions.py` | Replaceable demo prediction functions |
 | `f1_dashboard/contracts.py` | Typed inputs, readiness, input/cutoff validation and comparison |
