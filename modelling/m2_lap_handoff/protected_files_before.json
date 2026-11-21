@@ -53,11 +53,11 @@
     },
     {
         "path":  "D:\\AI_Project\\modelling\\pytest.ini",
-        "sha256":  "61CEA206942640DF0147C3D493FA342DC9B3784CA7077890FA99D3DE46BE2B01"
+        "sha256":  "8FB988159FA9EC526014FFE74F0002D6EA2A5A4F9C89964243B200F09BB72216"
     },
     {
         "path":  "D:\\AI_Project\\modelling\\README.md",
-        "sha256":  "B4EFEC5262E3176F459363166130934F3DD652E5BF24D63B427F7B6288EBF4CF"
+        "sha256":  "FFF593E52467424A5D272BE6AFFC01D48509E3B2CA29B973D90131C9E57D99BE"
     },
     {
         "path":  "D:\\AI_Project\\modelling\\requirements-lock.txt",
@@ -69,7 +69,7 @@
     },
     {
         "path":  "D:\\AI_Project\\modelling\\RUN_RESULTS.md",
-        "sha256":  "2C0DA2EC7F1A8EED37DE83E7BAB08E3B5196B52E75D35511FC350D6F59C153BF"
+        "sha256":  "D96060E434D71D7F26DA4E8EB97A5152073798E7A612B52CB760CB12CB02E0AB"
     },
     {
         "path":  "D:\\AI_Project\\modelling\\smoke.py",
