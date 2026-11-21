@@ -57,7 +57,7 @@
     },
     {
         "path":  "D:\\AI_Project\\modelling\\README.md",
-        "sha256":  "FFF593E52467424A5D272BE6AFFC01D48509E3B2CA29B973D90131C9E57D99BE"
+        "sha256":  "678CF8FDFF7BD013D1D2C7A321FBE60E7346D75AFEA789636412213B084FB248"
     },
     {
         "path":  "D:\\AI_Project\\modelling\\requirements-lock.txt",
@@ -93,7 +93,7 @@
     },
     {
         "path":  "D:\\AI_Project\\modelling\\verification\\build_package.py",
-        "sha256":  "70478EC619FB90300EA4E09BC1DAA7E0918EFCCD8175FFBF52C7C893B2D122DD"
+        "sha256":  "FACC7BE8CE4F81B61D71C08678B9A82F33E7785C7114C7E8A2D860D8A3C10F8A"
     },
     {
         "path":  "D:\\AI_Project\\modelling\\verification\\CHECKLIST.md",
@@ -113,10 +113,10 @@
     },
     {
         "path":  "D:\\AI_Project\\modelling\\verification\\source_manifest.json",
-        "sha256":  "FF53657439E91A2A8058210C70D4069915A8613807E512E8FB59691317BC4EDC"
+        "sha256":  "A47270CE79C28B148EDEDB757B8B3CA44AB4C4940FCD22BF769A7A937967AB55"
     },
     {
         "path":  "D:\\AI_Project\\modelling\\verification\\test_verification.py",
-        "sha256":  "40157B9BDBE80BE1BD76FDC85271D5754F9D40217B36A3D464747D217A15B33A"
+        "sha256":  "7147AAA401B9F49825349D3D88D42A5B83F5C4EB6D33887561C3C16EE29CDA05"
     }
 ]

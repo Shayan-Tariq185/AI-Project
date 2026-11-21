@@ -69,7 +69,10 @@ class VerificationTests(unittest.TestCase):
         for source in self.manifest['sources']:
             path = (MODELLING / source['path']).resolve()
             self.assertTrue(path.is_relative_to(MODELLING))
-            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), source['sha256'])
+            data = path.read_bytes()
+            if path.suffix.lower() in {'.csv', '.json', '.md', '.py', '.txt', '.toml'}:
+                data = data.replace(b'\r\n', b'\n')
+            self.assertEqual(hashlib.sha256(data).hexdigest(), source['sha256'])
         links = re.findall(r'\]\((\.\./[^)]+)\)', self.contents['CHECKLIST.md'])
         self.assertGreater(len(links), 50)
         for link in links:
@@ -89,8 +92,8 @@ class VerificationTests(unittest.TestCase):
 
     def test_generated_files_match_review_snapshot(self):
         for name, expected in self.contents.items():
-            # newline='' preserves intentional CSV CRLF in the in-memory snapshot.
-            with (HERE / name).open(encoding='utf-8', newline='') as stream:
+            newline = '' if name.endswith('.csv') else None
+            with (HERE / name).open(encoding='utf-8', newline=newline) as stream:
                 self.assertEqual(stream.read(), expected, name)
 
 if __name__ == '__main__':

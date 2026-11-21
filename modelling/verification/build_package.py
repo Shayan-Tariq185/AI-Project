@@ -11,9 +11,14 @@ MODELLING = HERE.parent
 FILES = ('CHECKLIST.md', 'issues.csv', 'qualifying_lap_events.csv', 'source_manifest.json')
 REVIEW_FIELDS = ['review_status', 'reviewer', 'reviewed_at_utc', 'confirmed_cutoff_utc',
                  'correction_details', 'evidence_and_notes']
+TEXT_SUFFIXES = {'.csv', '.json', '.md', '.py', '.txt', '.toml'}
 
 def read_json(path):
     return json.loads(path.read_text(encoding='utf-8-sig'))
+
+def canonical_bytes(path):
+    data = path.read_bytes()
+    return data.replace(b'\r\n', b'\n') if path.suffix.lower() in TEXT_SUFFIXES else data
 
 def csv_text(rows, columns):
     buffer = io.StringIO(newline='')
@@ -178,8 +183,8 @@ def build_contents():
                 'deleted_events': sum(e['action'] == 'deleted' for e in all_events),
                 'reinstated_events': sum(e['action'] == 'reinstated' for e in all_events),
                 'automatic_approval': False,
-                'sources': [{'path': str(p.relative_to(MODELLING)).replace('\\', '/'), 'bytes': p.stat().st_size,
-                             'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(sources)]}
+                'sources': [{'path': str(p.relative_to(MODELLING)).replace('\\', '/'), 'bytes': len(canonical_bytes(p)),
+                             'sha256': hashlib.sha256(canonical_bytes(p)).hexdigest()} for p in sorted(sources)]}
     intro = ['# M2 verification checklist — five-race 2024 pilot', '',
              'This package is a review worksheet, not an approval or a corrected dataset. Start here if you are new to the project. M2 verifies forecast-time inputs; M3 will use reviewed data later. No model training is part of this review.', '',
              '## How to use this package', '',

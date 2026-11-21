@@ -15,408 +15,408 @@
     },
     {
       "path": "data/2024_australia/draft_entrants.csv",
-      "bytes": 3664,
-      "sha256": "059ac3fc58a8b4cb25c3a4c720877e29db5a65cc412f3b0dd2f9426c47012dd7"
+      "bytes": 3644,
+      "sha256": "64263fbb93e9dfa26bcff36f4c95b6f34b7a76692d6a13f3579f6aaa01c5c7fd"
     },
     {
       "path": "data/2024_australia/podium_labels.csv",
-      "bytes": 493,
-      "sha256": "ccbcf0f6ced1859c4c6ba66cc880a58016f2fe5f227262afd92f685afbf93489"
+      "bytes": 473,
+      "sha256": "d03952bb3b1232907ef208281bd21b485d5c42dfe85c814ea6862b9e8053c3b2"
     },
     {
       "path": "data/2024_australia/post_grid_entrants.csv",
-      "bytes": 1887,
-      "sha256": "5d2be941aab0aa2163194b690f9a021ce60d76fcf6afb23c672c33b0d3c11438"
+      "bytes": 1867,
+      "sha256": "9f3addf66a07b8b627e1d6e8027c821aa37cd39707cc534d797b25163cf07a0b"
     },
     {
       "path": "data/2024_australia/post_qualifying_entrants.csv",
-      "bytes": 1825,
-      "sha256": "6b16518fa3812e4a2cb94f466fa6b29892e632ab105aa185c7ad5b50b52f33cd"
+      "bytes": 1805,
+      "sha256": "56233d564d365387a2d1698e48932f362df053f3a648d1e3279e814e28292cbc"
     },
     {
       "path": "data/2024_australia/quality_report.json",
-      "bytes": 8580,
-      "sha256": "6334cf18cb67cf7b591550f5dbff49bcc1fbe3d344a9ea560b8536b2ba37b4bd"
+      "bytes": 8268,
+      "sha256": "8a457c74e3499cb13c225e1d289f9309e13219350d85ad0454054a698e3fba39"
     },
     {
       "path": "data/2024_australia/raw/drivers_session_key-9483.json",
-      "bytes": 9650,
-      "sha256": "9facb8e96d6bfbd98299edb65265101cbce60ebea4e792a6d965de06c40408f8"
+      "bytes": 9383,
+      "sha256": "94a7dc8f71a6593dddc34dd74dd840049b7d421ce1e404bad09d952819383bbb"
     },
     {
       "path": "data/2024_australia/raw/drivers_session_key-9484.json",
-      "bytes": 9650,
-      "sha256": "6c2e27eb648764b72ca21f3d316b83952b676c625fc9dc56ea0f07b57d5d43ce"
+      "bytes": 9383,
+      "sha256": "54f302577a843b18221c5a40fea153b93f73d7e5beec5a3de504ffa2e06f5f8e"
     },
     {
       "path": "data/2024_australia/raw/laps_session_key-9483.json",
-      "bytes": 308293,
-      "sha256": "a192e3203136ef47fd2d606b6dc3b3e607b1ce3e1aff49b0f781f66bb9728959"
+      "bytes": 291409,
+      "sha256": "de94a3f97a6e6a9d4b88afdcc2ed49a59961e2fd706b555715930e21168f1c9a"
     },
     {
       "path": "data/2024_australia/raw/laps_session_key-9484.json",
-      "bytes": 242989,
-      "sha256": "4c35e7821a134b570b51046fbd6ca14233ca15bcecdf4f0f100d7e88c5f82bee"
+      "bytes": 229599,
+      "sha256": "8ca879f15d96aabfd5cd0062d43d639c2cee3e8a76077b33ea0737fd7308057c"
     },
     {
       "path": "data/2024_australia/raw/race_control_session_key-9483.json",
-      "bytes": 6702,
-      "sha256": "c66cc31ea48b78f11a572e5c30240d6c56c32b3dd1686d2a40c3a393aca30bf5"
+      "bytes": 6441,
+      "sha256": "d887eed9d226d6143b0888bd9a2f932ddc7d16b57b58048a4aafa9e0e9e4e8a8"
     },
     {
       "path": "data/2024_australia/raw/race_control_session_key-9484.json",
-      "bytes": 16121,
-      "sha256": "9b96fae29a30bb741fdc6728eb544dcb7ea5f7d4c6133346e730cdb99a265996"
+      "bytes": 15509,
+      "sha256": "8e4d120b43e667159b1f84015817c684c6a171ee38423fa8e3db45b85cc5042b"
     },
     {
       "path": "data/2024_australia/raw/session_result_session_key-9484.json",
-      "bytes": 6334,
-      "sha256": "2e25ff5363c15e0a4bb4069e9a3f12139eb898396bad209bd43214d029e072b2"
+      "bytes": 5953,
+      "sha256": "d5d9728e820319ef3af83568caa4798024c0acdf0102db3549e0121c743ec39c"
     },
     {
       "path": "data/2024_australia/raw/session_result_session_key-9488.json",
-      "bytes": 5088,
-      "sha256": "de971efc270f9e5a2f8a3bfff2eb2b42dfc1d0eb256ead82c60012b7931e056a"
+      "bytes": 4840,
+      "sha256": "538198ded2cf017de119f3880cfc43ffcb59934d9950b7c9ae1d48f7965d703b"
     },
     {
       "path": "data/2024_australia/raw/sessions_year-2024_country_name-Australia.json",
-      "bytes": 2400,
-      "sha256": "19442c311c22bb19f0e84dc0e15d102fac97bec78c63cca77b5cf3c4a705c0cd"
+      "bytes": 2314,
+      "sha256": "6288d279a43ae14690db654fbeffda4f210695c223d028b747cf4827342b41af"
     },
     {
       "path": "data/2024_australia/raw/starting_grid_session_key-9484.json",
-      "bytes": 2611,
-      "sha256": "0e9afb16d15219a9129524dfffa295849729b5341f6ccc03c15262a1651225b0"
+      "bytes": 2477,
+      "sha256": "0d2edffb1911e022fb65e369207359aceb0884b376eebcbd88a6a523a76fe4c3"
     },
     {
       "path": "data/2024_australia/raw/weather_session_key-9484.json",
-      "bytes": 22839,
-      "sha256": "a555c9a8c1da8cae129da5c44962397aa974414ddfc6c41409ddcc067d3f4935"
+      "bytes": 21902,
+      "sha256": "039c33c29322e332dacbddcf86e2e6df531e1d0a0d2c4b5ee783108223f6b613"
     },
     {
       "path": "data/2024_bahrain/draft_entrants.csv",
-      "bytes": 3791,
-      "sha256": "85ab9090c1db9bebe999f140a77c9dbab6dd08362b49f276a662c97988d16606"
+      "bytes": 3770,
+      "sha256": "75aa572fc03ecaa3f83d5c57abe11c6308a85e2aa0ddc402bc636761e7b4814d"
     },
     {
       "path": "data/2024_bahrain/podium_labels.csv",
-      "bytes": 476,
-      "sha256": "747a1e4f49c4b343dfc62d5c9bd02aa2c3f215385c3576aa5519f8548290d2fa"
+      "bytes": 455,
+      "sha256": "bd183d5dcd64da85e168130e9030f059e60acd163490dc29697fa83708f3b23b"
     },
     {
       "path": "data/2024_bahrain/post_grid_entrants.csv",
-      "bytes": 1926,
-      "sha256": "572e12fe2c92da04c88541818e5b27716b14d296c0cdfb7bb3ed6369e75367a1"
+      "bytes": 1905,
+      "sha256": "7b948038c72edd9c0504a36d3d3af0c70cba93efb5f2268f4ce2d00850df03c5"
     },
     {
       "path": "data/2024_bahrain/post_qualifying_entrants.csv",
-      "bytes": 1861,
-      "sha256": "60b6c110934d3e10f00896ec10a71461a057b60d27ec4e4c3b6fb9835841a918"
+      "bytes": 1840,
+      "sha256": "8751d0ca7d309c8665deb63c008d33b6d0b61497eb33eec336d4683ce059c269"
     },
     {
       "path": "data/2024_bahrain/quality_report.json",
-      "bytes": 8586,
-      "sha256": "a5f700e2668582ef74a65a24a3798a02a526d46c605191a1b782bb9d68655b4b"
+      "bytes": 8271,
+      "sha256": "b27510a0fcbcef1cb09a15952831ceef2bfdad11a2ad2608db1055b265d9cf9e"
     },
     {
       "path": "data/2024_bahrain/raw/drivers_session_key-9467.json",
-      "bytes": 10159,
-      "sha256": "82b06cde2590390a5b2a2010c01c229c6f034bcb0c727903783efb78734afc77"
+      "bytes": 9878,
+      "sha256": "d3e82497e63107b1705b9afc101f928502ac112aaa71654715a07824ef89c177"
     },
     {
       "path": "data/2024_bahrain/raw/drivers_session_key-9468.json",
-      "bytes": 10159,
-      "sha256": "d83f635ab9162e212f1ef5c8155c0c63ca4001616cdf7e80554511b9d6f930c2"
+      "bytes": 9878,
+      "sha256": "c6ca9143947390c6434ac9f7fdc7e44231180654a3d98607632a1822df438d7d"
     },
     {
       "path": "data/2024_bahrain/raw/laps_session_key-9467.json",
-      "bytes": 267254,
-      "sha256": "da9bc30f2bc41a463c15cabe0afe403309007f9e5969729fa11da18ca5e0d5de"
+      "bytes": 252039,
+      "sha256": "899bedc686e4d233a04680b1a4b2a49b53cf602a3682371e66cbdd983347c745"
     },
     {
       "path": "data/2024_bahrain/raw/laps_session_key-9468.json",
-      "bytes": 228310,
-      "sha256": "c424bf8ed5136ae9545a3d6d830391ecb5fa1498a92e9ed619f452bec2c9415d"
+      "bytes": 215320,
+      "sha256": "f55acef3da236e03b21686289adc11b9002ff7151c028c28552a7c7a523fdd33"
     },
     {
       "path": "data/2024_bahrain/raw/race_control_session_key-9467.json",
-      "bytes": 2307,
-      "sha256": "40df2e04bb25df8c1b54e8bf9fd0c8dbfe6bc26ab581db42969e3ed1f5f7652c"
+      "bytes": 2215,
+      "sha256": "9953e2dcaa47c4544eaa000d568558fbbafdaed8523cc81b323ce8dd8e81f0e6"
     },
     {
       "path": "data/2024_bahrain/raw/race_control_session_key-9468.json",
-      "bytes": 6875,
-      "sha256": "89ed978565a8f3fdc18b084fe454de63aee02f8bb2d0064915c6351391915f37"
+      "bytes": 6614,
+      "sha256": "9f25d873f8b18a77f9f6f69b10f4d6768ebbb70a7e69e496318a995cf9731b78"
     },
     {
       "path": "data/2024_bahrain/raw/session_result_session_key-9468.json",
-      "bytes": 6668,
-      "sha256": "f1b19e75f3d74a2fb181f0140629b4a6fbbc1610b16caea712997fca868c36ce"
+      "bytes": 6267,
+      "sha256": "fe95660ff805d28cb8819cfe78adf572e85f6cb8015507f50bf6c4281b5acb8e"
     },
     {
       "path": "data/2024_bahrain/raw/session_result_session_key-9472.json",
-      "bytes": 5367,
-      "sha256": "5def2787df4fb00b33bb4764bb239dfd09e00695d6566b5fb6fe88badc1ec873"
+      "bytes": 5106,
+      "sha256": "b420bc9c8a479a3965c74fa39c3cc16af29c4eaf65574e6e9777b22942e3fe8b"
     },
     {
       "path": "data/2024_bahrain/raw/sessions_year-2024_country_name-Bahrain.json",
-      "bytes": 3772,
-      "sha256": "4e60535c3dcf7452f1632298170bfc205b9b5b20915023a62fda07325deb71b7"
+      "bytes": 3635,
+      "sha256": "42610f35b0b0adce298311e7359ff5ac59085eacb6c2d4d1c3b3f7c6dfaaae67"
     },
     {
       "path": "data/2024_bahrain/raw/starting_grid_session_key-9468.json",
-      "bytes": 2746,
-      "sha256": "a165ed7e4a940c50f9b817848565bb0add9a6b5dbc5bb4b20b35f52c89b99428"
+      "bytes": 2605,
+      "sha256": "63823b6e94aee709757143a2fb9b813957aab0c920249d2f268b2d726bae3a94"
     },
     {
       "path": "data/2024_bahrain/raw/weather_session_key-9468.json",
-      "bytes": 22490,
-      "sha256": "93df7ba2d5153a5d78872ec140d05368fe53ea7f17092bb3bd6dd13afe8b63f7"
+      "bytes": 21565,
+      "sha256": "d0804e769ae571069b351874b7eb314fa04cb7033b46ebf413841b0806e12c1a"
     },
     {
       "path": "data/2024_china/draft_entrants.csv",
-      "bytes": 4039,
-      "sha256": "082a4b193322e6d615fe8044ed73021a5e0f021f12e9d835674bc19adaa510d9"
+      "bytes": 4018,
+      "sha256": "da25e5c8ce1cec8410254931b54aa11e13158a9f0b421ad08f48be37cf4e7b57"
     },
     {
       "path": "data/2024_china/podium_labels.csv",
-      "bytes": 436,
-      "sha256": "225eaa2c936a376eda102089a0d8e6f962dbb6a244c077cbf42b3e4fb830d310"
+      "bytes": 415,
+      "sha256": "cf1c3fc0d32bb3b0978bad6f8b5c519d26ff09ce3f03620d999beaaaa46feeba"
     },
     {
       "path": "data/2024_china/post_grid_entrants.csv",
-      "bytes": 2174,
-      "sha256": "eecc167ad86f73208982e896b54932270569214d4d1ed721c317d9304ee75082"
+      "bytes": 2153,
+      "sha256": "acb1819af2e5f31af30e133c1bb5ff36bafdfabae38b37e86f573fbcfd482c03"
     },
     {
       "path": "data/2024_china/post_qualifying_entrants.csv",
-      "bytes": 2109,
-      "sha256": "8ad591ec8bef2850838d55b5a6f4eee894ce827d2f463bc52ad2f55fd5d662e7"
+      "bytes": 2088,
+      "sha256": "418b1c1c01b7530d2e4df802de8c1edd8f3d7e5a6195359a931e145b6922f1b6"
     },
     {
       "path": "data/2024_china/quality_report.json",
-      "bytes": 9016,
-      "sha256": "e0f35fe1c5fb3fd374122c0cabb378fb6d316dae31e1048d4ebd628bf78cfd62"
+      "bytes": 8688,
+      "sha256": "33fb3f7e8136f98a298075d740d0679571e5dd48cf9c07fc6ae602dfce68cfa7"
     },
     {
       "path": "data/2024_china/raw/drivers_session_key-9663.json",
-      "bytes": 10159,
-      "sha256": "5abceecee68acd8b57097b86451bbe43320ee2593d1848922d18dbe386521001"
+      "bytes": 9878,
+      "sha256": "64819d7730f0673d2cf4bf1317694ecf0aa1ce848206ac06e8050a18eb4c3026"
     },
     {
       "path": "data/2024_china/raw/drivers_session_key-9664.json",
-      "bytes": 10159,
-      "sha256": "b0767331d6389452c2a14594f0cde9d9ac7751ac7a996908cc71178997728fc6"
+      "bytes": 9878,
+      "sha256": "e8936a112cab8ed136c692b10d06cf6fd97235a27a4e4f193a53e7be3d24ba4f"
     },
     {
       "path": "data/2024_china/raw/laps_session_key-9663.json",
-      "bytes": 352304,
-      "sha256": "638d86570e5cb51050a919ca44ea44e029e95370f0d6650f2dca401ab5a6994c"
+      "bytes": 333009,
+      "sha256": "66f469f66c3c73b868be74ec1e390dd87fd3cbffde3cc9382de546c6143aa735"
     },
     {
       "path": "data/2024_china/raw/laps_session_key-9664.json",
-      "bytes": 216977,
-      "sha256": "46d33f9c1e88847f8498ef6332df01b5abec714369099f64eb4f1a932913a5a6"
+      "bytes": 205087,
+      "sha256": "52c2a3ef5fd6eb16143934f421d782cd8b6ef88c6c122a3e00b40a8d39b4ce80"
     },
     {
       "path": "data/2024_china/raw/race_control_session_key-9663.json",
-      "bytes": 6800,
-      "sha256": "5c9451a578a5777ded49e31beeabf7474684a5f3f8f84f6a74971c4fd6dbf1fd"
+      "bytes": 6539,
+      "sha256": "9bcd450054cc16aa0511df106f6d11c7aeb41bd1784a075f2335d96e327fbe6e"
     },
     {
       "path": "data/2024_china/raw/race_control_session_key-9664.json",
-      "bytes": 15101,
-      "sha256": "a62af49a03a29b37617516fafd3f366bea77bcc930bb5aee9497b6ebeb6dcbb8"
+      "bytes": 14515,
+      "sha256": "cad1ea6638bb632b5934867084510b5ca1deb1fd140f819db6172c0e9d4998a2"
     },
     {
       "path": "data/2024_china/raw/session_result_session_key-9664.json",
-      "bytes": 6668,
-      "sha256": "469ae30b295dbe93039327e00529a18f3bc0183db9650f73a296bb5ccf682c07"
+      "bytes": 6267,
+      "sha256": "307513aca2bf50860e865e471d62f72a219a8944048c23ae3074d667a5fb04a4"
     },
     {
       "path": "data/2024_china/raw/session_result_session_key-9673.json",
-      "bytes": 5369,
-      "sha256": "d9467b64f74f111f5f0ded9a6b2668d157f75bc802521efb699f23247ce18dfc"
+      "bytes": 5108,
+      "sha256": "dbd89e8d4bdd94991957f79898c85be9a57c6861e1ef613ee10138d80177e37e"
     },
     {
       "path": "data/2024_china/raw/sessions_year-2024_country_name-China.json",
-      "bytes": 2376,
-      "sha256": "deb289ed7acfced80d59b63815c2b3b14ef414a144fa3877321087acfa82f6f9"
+      "bytes": 2290,
+      "sha256": "37d8f9cdb4a6e8d821852357d512d8a3feebcad15d89b4cbe59e9d4f8e07f0a5"
     },
     {
       "path": "data/2024_china/raw/starting_grid_session_key-9664.json",
-      "bytes": 2749,
-      "sha256": "d761218aeb3399b7e31411adebdd277292851bc21c6013f7c714306aa4b9e68b"
+      "bytes": 2608,
+      "sha256": "caeebef742bfaa705c7bc997f172dbf14156d7b2ce6114ea5b71619902f6e579"
     },
     {
       "path": "data/2024_china/raw/weather_session_key-9664.json",
-      "bytes": 25201,
-      "sha256": "ea95595a0f71ff13a159983fd1e3e9f8a34ab07af2c85482ba427272d2e0d7ef"
+      "bytes": 24168,
+      "sha256": "d684e86515367c9457ac17d05a5838bc92786b7d2d2cdb679482969e8e653f36"
     },
     {
       "path": "data/2024_japan/draft_entrants.csv",
-      "bytes": 3756,
-      "sha256": "ec4631ddae97659b47cd79137be5caae866529aca721c35ba4082d19b7db7da8"
+      "bytes": 3735,
+      "sha256": "79ccbc094d0648785d48de8cc4a4afb88e70ade7619c4dff97e3327a343f5805"
     },
     {
       "path": "data/2024_japan/podium_labels.csv",
-      "bytes": 436,
-      "sha256": "a8479fcd7882475e08cc04b7f5223919919db6ca848a90a78ec7f128a6ee93a0"
+      "bytes": 415,
+      "sha256": "678f511adf33b1a8e8ac6f49f7820c027ffac6cd4a47eec702d10da3546cbc67"
     },
     {
       "path": "data/2024_japan/post_grid_entrants.csv",
-      "bytes": 1891,
-      "sha256": "a67228eae05bb4555412a235ff10d8a46dc53c4c9a153806e6183e2af2dd0a1b"
+      "bytes": 1870,
+      "sha256": "a4a14100f20cc4bfb8bed593672f5b58ed90a7f4a6af8c8553b747d54d150960"
     },
     {
       "path": "data/2024_japan/post_qualifying_entrants.csv",
-      "bytes": 1826,
-      "sha256": "ac6bffa66afd17d3cd75b2244967aaed3ee5178cd93ee2e0326440aa714e6040"
+      "bytes": 1805,
+      "sha256": "820b2126dfdb8b7b899fcbb6577260166021c0dfa383106dda3f28268b5e3c87"
     },
     {
       "path": "data/2024_japan/quality_report.json",
-      "bytes": 8128,
-      "sha256": "8d6dfac2c4f8be59c6fdbdb64c53cb0eedfcd342e873f32050a82885a4acd5d4"
+      "bytes": 7826,
+      "sha256": "9a7ece3de1554fe6b52a0bf9a1edd2f3c05933dd6ac4be318601f0c55e027186"
     },
     {
       "path": "data/2024_japan/raw/drivers_session_key-9491.json",
-      "bytes": 10159,
-      "sha256": "8945e91ba5876adeca754ae9991d6b46ad1463f208ab4bd9b3b5987b76696005"
+      "bytes": 9878,
+      "sha256": "1091f0e3a6ba0bfd61789a01a34d98e842b264096dd6d75b8c6d95aae6d43992"
     },
     {
       "path": "data/2024_japan/raw/drivers_session_key-9492.json",
-      "bytes": 10159,
-      "sha256": "e23fd38b88123d65ae6ce4da11bc9cd48b750009d43f8d845266d4b2111d29a0"
+      "bytes": 9878,
+      "sha256": "8f4df3ef29e8d87e66048f199d60298d307cc6ea3a2d96d7a5c4b486f0eb1638"
     },
     {
       "path": "data/2024_japan/raw/laps_session_key-9491.json",
-      "bytes": 357061,
-      "sha256": "63cfd6adbd7aec71a8ba1715718b9aef4c46b13d567188be705bc3627e9ace97"
+      "bytes": 337083,
+      "sha256": "ec85720a52d97d08ebf5c59e6ea06dffb29b0dbc4f246ff023abdc54a4eeb532"
     },
     {
       "path": "data/2024_japan/raw/laps_session_key-9492.json",
-      "bytes": 182452,
-      "sha256": "6c592292d3758b1e2fc10cfbd6b8355f7238b0295e01efb2297cb32df3253ff7"
+      "bytes": 172241,
+      "sha256": "306a120bbffa09f6d351197734205294eb8f57d256c1c2d76e92dcd04c75a646"
     },
     {
       "path": "data/2024_japan/raw/race_control_session_key-9491.json",
-      "bytes": 3594,
-      "sha256": "46aff927898911d473e049bfd246564a8fe7c54dd42222a3f635e588e6f370c5"
+      "bytes": 3450,
+      "sha256": "fa7b4d427e17d491b10c7839dc25e8dfab648212c4ef07606a23af040e6d5d8c"
     },
     {
       "path": "data/2024_japan/raw/race_control_session_key-9492.json",
-      "bytes": 7287,
-      "sha256": "d59eda5c856867fc9f7cb18e91c1b0d4644c6064fef60aef689af181622721aa"
+      "bytes": 7013,
+      "sha256": "33c467350d1f2cb593ea72b9958f64ce8c72517369f61377bcde74520b4cf618"
     },
     {
       "path": "data/2024_japan/raw/session_result_session_key-9492.json",
-      "bytes": 6664,
-      "sha256": "733372dd3cf7b33e6172c155773004bbf889234a7fb62044093ecd5be2011675"
+      "bytes": 6263,
+      "sha256": "100ae5023dc301c1537ad286bae94db5aa3433a4987c29a3b5a142e013a26652"
     },
     {
       "path": "data/2024_japan/raw/session_result_session_key-9496.json",
-      "bytes": 5355,
-      "sha256": "c02af966da0689ed0e75ce24c35057a65ce7ecabd73984b457689dfd475fa529"
+      "bytes": 5094,
+      "sha256": "6bbd6f8b70f66853a85d327fdaa6425e2e92c970b28de972b15a38216d2daa43"
     },
     {
       "path": "data/2024_japan/raw/sessions_year-2024_country_name-Japan.json",
-      "bytes": 2350,
-      "sha256": "c8e9e7faa380be2640c2688bfab10a01a6cf98a809b169299deb8ed0f75cabf4"
+      "bytes": 2264,
+      "sha256": "59ded02245625d14698220495fbc3f2c154a0bd214ef29ee4a28b8e79e4c9a18"
     },
     {
       "path": "data/2024_japan/raw/starting_grid_session_key-9492.json",
-      "bytes": 2749,
-      "sha256": "0b0792fb475e6868fc858df990c64d87c7b91f9f573d399c07cc8434ac2d59e6"
+      "bytes": 2608,
+      "sha256": "9d3a1f3ffa0e7cc2dce59070a8bb60dcbf593bd16383397051f16694d2209fb9"
     },
     {
       "path": "data/2024_japan/raw/weather_session_key-9492.json",
-      "bytes": 22269,
-      "sha256": "e48d022f48a73824b8a2239a013b7b550dee40995c7e10309cfa8217358e0944"
+      "bytes": 21356,
+      "sha256": "5d3b76ba81e5b28c007b6f3f24f2517d97f0e33b86691bfde9c2ac00396515f9"
     },
     {
       "path": "data/2024_saudi_arabia/draft_entrants.csv",
-      "bytes": 3908,
-      "sha256": "19edb98bad961bd79b53f2b56578aaddaa75dca1e824be66c71b80c9124a63ae"
+      "bytes": 3887,
+      "sha256": "9a43bada2c758f7906ef27cc219df2ca7b175e4415800fd8adc79333fc655672"
     },
     {
       "path": "data/2024_saudi_arabia/podium_labels.csv",
-      "bytes": 576,
-      "sha256": "9946459921e87cdac071be24ba93e391e11de01e85d3cfbc3258c2173c8cd1a5"
+      "bytes": 555,
+      "sha256": "c92b6e13bd4b413fa685fdf44cf398409647e60f15f7cbeffac7e5b6a9bb12ca"
     },
     {
       "path": "data/2024_saudi_arabia/post_grid_entrants.csv",
-      "bytes": 2043,
-      "sha256": "02be304a80a63011cc9f17ef6eceb2d249d763f64a61ba4e77f921cd16ba0257"
+      "bytes": 2022,
+      "sha256": "35ed254ec974d72e82a7accc660bf15b9ed4e61bd044e382f3a9d337f801b428"
     },
     {
       "path": "data/2024_saudi_arabia/post_qualifying_entrants.csv",
-      "bytes": 1978,
-      "sha256": "329dd2f659eb6cca0a7c9b9ed617e629bf5b9d74dea9e6efcef89aba42fd1d9e"
+      "bytes": 1957,
+      "sha256": "0d3b0e8d6781521422f9a11051813eceea4d8893994b1bbbba701fecf2a7c559"
     },
     {
       "path": "data/2024_saudi_arabia/quality_report.json",
-      "bytes": 9569,
-      "sha256": "4fa7186d951dfb6535b6c7335f71153b3f8446051c36ab5799b3ade7f8a04410"
+      "bytes": 9223,
+      "sha256": "4c35696f37fe05169ddfb197aafd4191d27401b6b4f198e613209a4015353773"
     },
     {
       "path": "data/2024_saudi_arabia/raw/drivers_session_key-9475.json",
-      "bytes": 10019,
-      "sha256": "ea2b6136390828e7fd2a6e0fea24acfa5564d0314f56e5c53569be07e9d4f3f9"
+      "bytes": 9738,
+      "sha256": "b1dfcdfd14b0c6f77db66fb4c712c0492e5ee3f234d47e493224d9533b47c7b2"
     },
     {
       "path": "data/2024_saudi_arabia/raw/drivers_session_key-9476.json",
-      "bytes": 10019,
-      "sha256": "e958c55022f93599de0bf2700831921e94c01caae6188cb7698a50f81a862dca"
+      "bytes": 9738,
+      "sha256": "698e5b5793f40b033889bb34c0e1b42aac574112d4ebd420cc098879638a2594"
     },
     {
       "path": "data/2024_saudi_arabia/raw/laps_session_key-9475.json",
-      "bytes": 229029,
-      "sha256": "95d938fbf76df1c7fec4b6b38dc4f5f8668d7091feff30c6b5c16621f6f04033"
+      "bytes": 216223,
+      "sha256": "693bb2c00c58918d6ea72267358b610216c7d485d7df8ecb78832e7e34348adf"
     },
     {
       "path": "data/2024_saudi_arabia/raw/laps_session_key-9476.json",
-      "bytes": 257844,
-      "sha256": "11a7413bb9e30097be450a411232237ab0726eb0e536a7323a708b9c9a85a55d"
+      "bytes": 243434,
+      "sha256": "df841d4b273fff5b07228a2e4acf574a96e247e00e7f9bc35c7a7eff152dcb3d"
     },
     {
       "path": "data/2024_saudi_arabia/raw/race_control_session_key-9475.json",
-      "bytes": 8275,
-      "sha256": "5e5f4456caaa45d1e7a1272596da7434f45f78fedd5ae7e1affa6af790b27848"
+      "bytes": 7949,
+      "sha256": "79fb4226d38a1deea413ad75e9401244a472e81f7434a063facc46a7c2f86381"
     },
     {
       "path": "data/2024_saudi_arabia/raw/race_control_session_key-9476.json",
-      "bytes": 15070,
-      "sha256": "0a7e6657ce8909c361191c27c558fe6fb3d566728e2ecd8e8e03a058c6a31fb0"
+      "bytes": 14510,
+      "sha256": "66efad519959458461e16a5b50c4313f0e36640b9fd36e2534c9a53d5fd575e8"
     },
     {
       "path": "data/2024_saudi_arabia/raw/session_result_session_key-9476.json",
-      "bytes": 6661,
-      "sha256": "533693898117164c61655c8bcd0009810089b2884a56cc78bb659c8ef2511343"
+      "bytes": 6260,
+      "sha256": "ba92394ec6a5dc807f2a7e281ee60733355a8f04dbd96722df29a1c2fa9c394b"
     },
     {
       "path": "data/2024_saudi_arabia/raw/session_result_session_key-9480.json",
-      "bytes": 5365,
-      "sha256": "46db7c0f34485cf7a6c4e9a2c37a0827dee8b1ecdc1aaa06153e9f3bac76ff0d"
+      "bytes": 5104,
+      "sha256": "4c4766cf71d6bbe317f42d8619350a8ddae20e2ae2f0ef0cf4c79c3a4fb4bc00"
     },
     {
       "path": "data/2024_saudi_arabia/raw/sessions_year-2024_country_name-Saudi Arabia.json",
-      "bytes": 2400,
-      "sha256": "c081b65f5b0482a2b53b077a7dd49a0b0bf42384fca9502d3227ec83e2f69c46"
+      "bytes": 2314,
+      "sha256": "a254b5a1565c4c6be358751aacf663074e85b756650532b77add464467056dc6"
     },
     {
       "path": "data/2024_saudi_arabia/raw/starting_grid_session_key-9476.json",
-      "bytes": 2743,
-      "sha256": "246735090ab40c0cb1cf0d816d397df332454cf5f75831d97afa2624117ac7a7"
+      "bytes": 2602,
+      "sha256": "3fb0c825358375f11d5d752b14233d3ea985def7636af2f8b1b2e903aca7e725"
     },
     {
       "path": "data/2024_saudi_arabia/raw/weather_session_key-9476.json",
-      "bytes": 27451,
-      "sha256": "e6d617ea67ac50f442fe1f9577297decdd2b9f78bd285876c33ab99d8f6202d5"
+      "bytes": 26322,
+      "sha256": "d74a6c040b4a522791ac5cdd20a13ee4a7875988f5b126cc1644a3a9890c3d31"
     },
     {
       "path": "data/pilot_2024/quality_report.json",
-      "bytes": 51174,
-      "sha256": "3804adfaf89efb3e07e1f12fea01c860d99ee8e13765b0d24268e54009689029"
+      "bytes": 49534,
+      "sha256": "5c134f586c5b83ae6f9779ca54e3d5498bd86a9b3b5b307716bdc1b6fb36740b"
     }
   ]
 }
