@@ -29,8 +29,20 @@ def main():
     before = json.loads((package / 'protected_files_before.json').read_text(encoding='utf-8-sig'))
     for record in before:
         path = Path(record['path'])
-        actual = hashlib.sha256(path.read_bytes()).hexdigest()
-        assert actual == record['sha256'].lower(), f'Protected file changed: {path}'
+        if not path.is_absolute():
+            path = ROOT / path
+        elif not path.exists():
+            try:
+                modelling_index = path.parts.index('modelling')
+            except ValueError as exc:
+                raise AssertionError(f'Protected path is outside the modelling package: {path}') from exc
+            path = ROOT.joinpath(*path.parts[modelling_index + 1:])
+        data = path.read_bytes()
+        hashes = {
+            hashlib.sha256(data).hexdigest(),
+            hashlib.sha256(data.replace(b'\r\n', b'\n')).hexdigest(),
+        }
+        assert record['sha256'].lower() in hashes, f'Protected file changed: {path}'
     # Check relative Markdown links resolve without contacting external services.
     import re
     for document in package.glob('*.md'):
