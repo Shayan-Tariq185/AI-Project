@@ -541,3 +541,26 @@ Until those steps are complete, M2 should describe the data as:
 ```text
 collected_draft_requires_M2
 ```
+
+## Generate the complete cached M2 export
+
+From the `modelling` directory:
+
+```powershell
+py build_m2_deliverables.py
+```
+
+This command generates:
+
+- `data/sample_race.csv`
+- `data/training_table.csv`
+- `data/DATA_DICTIONARY.md`
+- `data/lap/lap_table.csv`
+- `data/schedule.csv`
+- `data/results/*_podium.csv`
+- `data/VERIFICATION_LOG.md`
+- `data/M2_REPORT_SECTION.md`
+- `data/upcoming/README.md`
+
+It does not create a lap table when `/stints` cache files are absent.
+It does not mark any race M2 approved.

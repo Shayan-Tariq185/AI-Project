@@ -1,5 +1,19 @@
 # OpenF1 M3 prototype
 
+## M2 offline deliverables
+
+Build the current cached M2 sample, pilot training table, schedule, podium results,
+data dictionary, verification log, report section, and lap quarantine:
+
+```powershell
+py build_m2_deliverables.py
+py -m pytest -q test_m2_deliverables.py
+```
+
+The generated data is under `modelling/data/`. The lap table remains empty until
+verified practice `/stints` caches are available. The deliverables are draft
+evidence, not M2-approved training data.
+
 Podium implementation follows `CONTRACT_v2.md` (Random Forest only). All source, environments, caches, data and
 test artifacts live in this directory. Python used for verification: CPython
 3.14.5 on Windows. `requirements-lock.txt` records every installed dependency;
