@@ -83,6 +83,8 @@
   },
   "race_result_rows": 20,
   "race_control_rows": 20,
+  "entrant_source_session_key": 9468,
+  "qualifying_no_recorded_valid_lap_drivers": [],
   "missing_columns_or_values": {},
   "blocking": [
     "Lap deletions and official qualifying classification require M2/FIA review.",
@@ -102,7 +104,7 @@
       "cached": true
     },
     {
-      "url": "https://api.openf1.org/v1/drivers?session_key=9472",
+      "url": "https://api.openf1.org/v1/drivers?session_key=9468",
       "rows": 20,
       "cached": true
     },
@@ -129,8 +131,7 @@
     {
       "url": "https://api.openf1.org/v1/starting_grid?session_key=9468",
       "rows": 20,
-      "cached": false,
-      "retrieved_at_utc": "2026-11-13T07:31:07.062550+00:00"
+      "cached": true
     },
     {
       "url": "https://api.openf1.org/v1/session_result?session_key=9472",
