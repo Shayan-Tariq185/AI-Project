@@ -1,0 +1,8 @@
+{
+  "status": "blocked_missing_stints",
+  "lap_rows": 0,
+  "practice_sessions_with_stints": 0,
+  "reason": "No cached OpenF1 stints responses are available.",
+  "required_source": "OpenF1 /stints for each approved normal practice session",
+  "invented_compound_or_tyre_age": false
+}
